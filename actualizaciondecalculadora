@@ -1,0 +1,28 @@
+  double n1=Double.parseDouble(txt1.getText());
+        double n2=Double.parseDouble(txt2.getText());
+        double resultado = 0;
+        //obtenemos el dato del  combo
+       //operaciones realizadas y hecho los cabios  pertienentes
+       //realizacion de cambios en repositrois
+       
+        int i=cbx1.getSelectedIndex();
+        //condiciones
+        if(i==0){
+            resultado = n1+n2;
+        }
+        if(i==1){
+            resultado = n1-n2;
+        }
+        if(i==2){
+            resultado = n1*n2;
+        }
+        if(i==3){
+            resultado = n1/n2;
+        }
+        if(i==4){
+            resultado = (n1+n2)/2;
+        }
+        //codificacion y actualizacion
+//presentacion de lacaj de texto el cual  realizamos la primera  modificacion
+        //presentacion de la caja de texto
+        txt3.setText(String.valueOf(resultado));
